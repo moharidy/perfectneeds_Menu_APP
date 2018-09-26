@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Menu_App</string>
+    <string name="category_soup">Soup</string>
+    <string name="category_tampura">Tampura</string>
+    <string name="category_donburi">Donburi</string>
+    <string name="category_appetizers">Appetizers</string>
+    <string name="category_maki">Maki</string>
+    <string name="sub_category_ura_maki">Ura maki</string>
+    <string name="sub_category_crispy_ura_maki">Crispy ura maki</string>
+    <string name="sub_category_special_maki">Ura maki special</string>
+    <string name="sub_category_gunkan_maki">Gunkan maki</string>
+    <string name="sub_category_hoso_maki">Hoso maki</string>
+    <string name="sub_category_futo_maki">Futo maki</string>
+
+
+</resources>

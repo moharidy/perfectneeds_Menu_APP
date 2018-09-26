@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_item_background"
+    tools:context="com.example.mohammed.Menu_App.MakiAvtivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Numbers category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/category_soup">
+
+            <ImageView
+                android:id="@+id/logo"
+                style="@style/CategoryStyle_logo"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/logo" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_height"
+            android:background="@color/category_soup">
+
+            <TextView
+                android:id="@+id/ura_maki"
+                style="@style/Sub_CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/sub_category_ura_maki" />
+        </FrameLayout>
+
+        <!-- Family category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_tempura">
+
+            <TextView
+                android:id="@+id/crispy_ura_maki"
+                style="@style/Sub_CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/sub_category_crispy_ura_maki" />
+        </FrameLayout>
+
+        <!-- Colors category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_donburi">
+
+            <TextView
+                android:id="@+id/special_maki"
+                style="@style/Sub_CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/sub_category_special_maki" />
+        </FrameLayout>
+
+        <!-- Phrases category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_appetizers">
+
+            <TextView
+                android:id="@+id/gunkan_maki"
+                style="@style/Sub_CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/sub_category_gunkan_maki" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_maki">
+
+            <TextView
+                android:id="@+id/hoso_maki"
+                style="@style/Sub_CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/sub_category_hoso_maki" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/category_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+</LinearLayout>
