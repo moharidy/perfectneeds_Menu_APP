@@ -11,7 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
- MediaPlayer mediaPlayer;
+    MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 catgegory_menu.setImageResource(R.drawable.maki_category);
                 maki.setTextColor(Color.RED);
                 releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.maki_menu);
+                mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.maki_menu);
                 mediaPlayer.start();
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -100,7 +101,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-    public void releaseMediaPlayer(){if(mediaPlayer != null){mediaPlayer.release();mediaPlayer = null;}}
+    public void releaseMediaPlayer() {
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
 
     @Override
     protected void onStop() {

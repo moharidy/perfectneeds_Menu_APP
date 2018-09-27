@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 public class StartActivity extends AppCompatActivity {
 
-    ImageView langauge_image_view ;
+    ImageView langauge_image_view;
     TextView arabic_text_view;
     TextView english_text_view;
 
-       @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
@@ -27,18 +27,10 @@ public class StartActivity extends AppCompatActivity {
                 arabic_text_view.setVisibility(View.VISIBLE);
                 english_text_view.setVisibility(View.VISIBLE);
 
-                /*arabic_text_view.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(StartActivity.this,MainActivityArabic.class);
-                        startActivity(intent);
-                    }
-                });*/
-
                 english_text_view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(StartActivity.this,MainActivity.class);
+                        Intent intent = new Intent(StartActivity.this, MainActivity.class);
                         startActivity(intent);
                     }
                 });
@@ -46,12 +38,11 @@ public class StartActivity extends AppCompatActivity {
                 arabic_text_view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(StartActivity.this,MainActivity_Arabic.class);
+                        Intent intent = new Intent(StartActivity.this, MainActivity_Arabic.class);
                         startActivity(intent);
 
                     }
                 });
-
 
 
             }

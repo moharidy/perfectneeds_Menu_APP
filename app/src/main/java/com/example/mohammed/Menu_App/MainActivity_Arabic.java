@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity_Arabic extends AppCompatActivity {
     MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,7 @@ public class MainActivity_Arabic extends AppCompatActivity {
                 catgegory_menu.setImageResource(R.drawable.maki_category);
                 maki.setTextColor(Color.RED);
                 releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(MainActivity_Arabic.this,R.raw.maki_menu);
+                mediaPlayer = MediaPlayer.create(MainActivity_Arabic.this, R.raw.maki_menu);
                 mediaPlayer.start();
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
@@ -40,8 +41,12 @@ public class MainActivity_Arabic extends AppCompatActivity {
     }
 
 
-
-    public void releaseMediaPlayer(){if(mediaPlayer != null){mediaPlayer.release();mediaPlayer = null;}}
+    public void releaseMediaPlayer() {
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
 
     @Override
     protected void onStop() {

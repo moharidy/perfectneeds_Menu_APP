@@ -1,157 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:fillViewport="true"
-    >
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/list_item_background"
-    tools:context="com.example.mohammed.Menu_App.MainActivity">
+    android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <!-- Logo imageview -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:background="@color/category_soup">
-
-            <ImageView
-                android:id="@+id/logo"
-                style="@style/CategoryStyle_logo"
-                android:background="?android:attr/selectableItemBackground"
-                android:src="@drawable/logo" />
-        </FrameLayout>
-
-        <!-- Soup category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/list_item_height"
-            android:background="@color/category_soup">
-
-            <TextView
-                android:id="@+id/soup"
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="@string/category_soup" />
-        </FrameLayout>
-
-        <!-- Tempura category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_tempura">
-
-            <TextView
-                android:id="@+id/tampura"
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="@string/category_tampura" />
-        </FrameLayout>
-
-        <!-- Donburi category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_donburi">
-
-            <TextView
-                android:id="@+id/donburi"
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="@string/category_donburi" />
-        </FrameLayout>
-
-        <!-- Appetizers category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_appetizers">
-
-            <TextView
-                android:id="@+id/appetizers"
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="@string/category_appetizers" />
-        </FrameLayout>
-        <!-- Maki category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_maki">
-
-            <TextView
-                android:id="@+id/maki"
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="@string/category_maki" />
-        </FrameLayout>
-        <!-- Bento boxes category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_maki">
-
-            <TextView
-
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="Bento boxes" />
-        </FrameLayout>
-        <!-- Sharing boats category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_maki">
-
-            <TextView
-
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="Sharing boats" />
-        </FrameLayout>
-        <!-- Noodels category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_maki">
-
-            <TextView
-
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="Noodels" />
-        </FrameLayout>
-        <!-- Teiyaki skewers category -->
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/category_maki">
-
-            <TextView
-
-                style="@style/CategoryStyle"
-                android:background="?android:attr/selectableItemBackground"
-                android:text="Teriyaki skewers" />
-        </FrameLayout>
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/category_menu"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY" />
+        android:background="@color/list_item_background"
+        tools:context="com.example.mohammed.Menu_App.MainActivity">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Logo imageview -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/category_soup">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    style="@style/CategoryStyle_logo"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/logo" />
+            </FrameLayout>
+
+            <!-- Soup category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/category_soup">
+
+                <TextView
+                    android:id="@+id/soup"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_soup" />
+            </FrameLayout>
+
+            <!-- Tempura category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_tempura">
+
+                <TextView
+                    android:id="@+id/tampura"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_tampura" />
+            </FrameLayout>
+
+            <!-- Donburi category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_donburi">
+
+                <TextView
+                    android:id="@+id/donburi"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_donburi" />
+            </FrameLayout>
+
+            <!-- Appetizers category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_appetizers">
+
+                <TextView
+                    android:id="@+id/appetizers"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_appetizers" />
+            </FrameLayout>
+            <!-- Maki category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_maki">
+
+                <TextView
+                    android:id="@+id/maki"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_maki" />
+            </FrameLayout>
+            <!-- Bento boxes category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_maki">
+
+                <TextView
+
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Bento boxes" />
+            </FrameLayout>
+            <!-- Sharing boats category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_maki">
+
+                <TextView
+
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Sharing boats" />
+            </FrameLayout>
+            <!-- Noodels category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_maki">
+
+                <TextView
+
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Noodels" />
+            </FrameLayout>
+            <!-- Teiyaki skewers category -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/category_maki">
+
+                <TextView
+
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Teriyaki skewers" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/category_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
 </ScrollView>
