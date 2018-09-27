@@ -48,6 +48,9 @@ public class MenuItemAdapter extends ArrayAdapter<Menu_Item> {
 
         Menu_Item currentMenuItem = getItem(position);
 
+        TextView subcategoryTextView = listItemView.findViewById(R.id.sub_category_text_view);
+        subcategoryTextView.setText(currentMenuItem.getmSubCategory());
+
         TextView menuitemTextView = listItemView.findViewById(R.id.menu_item_text_view);
         menuitemTextView.setText(currentMenuItem.getmMenuitem());
 
@@ -59,6 +62,10 @@ public class MenuItemAdapter extends ArrayAdapter<Menu_Item> {
         if(currentMenuItem.hasImage()){
         imageView.setImageResource(currentMenuItem.getmImageResourceId());imageView.setVisibility(View.VISIBLE);}
         else { imageView.setVisibility(View.GONE);}
+
+       // if(currentMenuItem.hasText()){
+            //subcategoryTextView.setText(currentMenuItem.getmSubCategory());subcategoryTextView.setVisibility(View.VISIBLE);}
+        //else { subcategoryTextView.setVisibility(View.GONE);}
 
         View textContainer = listItemView.findViewById(R.id.text_container);
         int color = ContextCompat.getColor(getContext(),mColorResourceId);

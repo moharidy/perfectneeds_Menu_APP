@@ -1,5 +1,7 @@
 <resources>
+    <string name="content_description_log" translatable="false">Logo</string>
     <string name="app_name">Menu_App</string>
+    <string name="welcome">Welcome to our restaurant</string>
     <string name="category_soup">Soup</string>
     <string name="category_tampura">Tampura</string>
     <string name="category_donburi">Donburi</string>
@@ -11,6 +13,19 @@
     <string name="sub_category_gunkan_maki">Gunkan maki</string>
     <string name="sub_category_hoso_maki">Hoso maki</string>
     <string name="sub_category_futo_maki">Futo maki</string>
+    <string name="app_name_arabic" translatable="false">قائمة الطعام</string>
+    <string name="welcome_arabic" translatable="false">مرحبا بكم في مطعمنا</string>
+    <string name="category_soup_arabic" translatable="false">الشوربة</string>
+    <string name="category_tampura_arabic" translatable="false">تامبورة</string>
+    <string name="category_donburi_arabic" translatable="false">دونبوري</string>
+    <string name="category_appetizers_arabic" translatable="false">المقبلات</string>
+    <string name="category_maki_arabic" translatable="false">ماكي</string>
+    <string name="sub_category_ura_maki_arabic" translatable="false">أورا ماكي</string>
+    <string name="sub_category_crispy_ura_maki_arabic" translatable="false">كريسبي أورا ماكي</string>
+    <string name="sub_category_special_maki_arabic" translatable="false">أورا ماكي ممتاز</string>
+    <string name="sub_category_gunkan_maki_arabic" translatable="false">جونكان ماكي</string>
+    <string name="sub_category_hoso_maki_arabic" translatable="false">هوسو ماكي</string>
+    <string name="sub_category_futo_maki_arabic" translatable="false">فوتو ماكي</string>
 
 
 </resources>

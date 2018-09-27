@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">قائمة الطعام</string>
+    <string name="welcome">مرحبا بكم في مطعمنا</string>
+    <string name="category_soup">الشوربة</string>
+    <string name="category_tampura">تامبورة</string>
+    <string name="category_donburi">دونبوري</string>
+    <string name="category_appetizers">المقبلات</string>
+    <string name="category_maki">ماكي</string>
+    <string name="sub_category_ura_maki">أورا ماكي</string>
+    <string name="sub_category_crispy_ura_maki">كريسبي أورا ماكي</string>
+    <string name="sub_category_special_maki">أورا ماكي ممتاز</string>
+    <string name="sub_category_gunkan_maki">جونكان ماكي</string>
+    <string name="sub_category_hoso_maki">هوسو ماكي</string>
+    <string name="sub_category_futo_maki">فوتو ماكي</string>
+</resources>

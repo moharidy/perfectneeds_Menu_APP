@@ -17,6 +17,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final ImageView catgegory_menu = findViewById(R.id.category_menu);
+        final TextView maki = findViewById(R.id.maki);
+        maki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Open Maki Menu", Toast.LENGTH_SHORT).show();
+                catgegory_menu.setImageResource(R.drawable.maki_category);
+                maki.setTextColor(Color.RED);
+                releaseMediaPlayer();
+                mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.maki_menu);
+                mediaPlayer.start();
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        Intent intent = new Intent(MainActivity.this, MakiActivity.class);
+                        startActivity(intent);
+                    }
+                });
+            }
+        });
+    }
+
         /*TextView soup = findViewById(R.id.soup);
         soup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
-                        Intent intent = new Intent(MainActivity.this, MakiAvtivity.class);
+                        Intent intent = new Intent(MainActivity.this, SoupActivity.class);
                         startActivity(intent);
                     }});
 
@@ -40,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(MainActivity.this, "open family activity", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "open tempura activity", Toast.LENGTH_SHORT).show();
 
 
                 releaseMediaPlayer();
@@ -61,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "open colors activity", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "open donburi activity", Toast.LENGTH_SHORT).show();
 
                 releaseMediaPlayer();
                 mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.donburi_menu);
@@ -69,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
-                        Intent intent = new Intent(MainActivity.this, Colorsactivity.class);
+                        Intent intent = new Intent(MainActivity.this, DonburiActivity.class);
                         startActivity(intent);
                     }
                 });
@@ -77,29 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });*/
-
-        final ImageView catgegory_menu = findViewById(R.id.category_menu);
-        final TextView maki = findViewById(R.id.maki);
-        maki.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Open Maki Menu", Toast.LENGTH_SHORT).show();
-                catgegory_menu.setImageResource(R.drawable.maki_category);
-                maki.setTextColor(Color.RED);
-                releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(MainActivity.this,R.raw.maki_menu);
-                mediaPlayer.start();
-                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        Intent intent = new Intent(MainActivity.this, MakiAvtivity.class);
-                        startActivity(intent);
-                    }
-                });
-            }
-        });
-    }
-
 
     public void releaseMediaPlayer(){if(mediaPlayer != null){mediaPlayer.release();mediaPlayer = null;}}
 
@@ -109,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         releaseMediaPlayer();
     }
 }
+
 
 
 

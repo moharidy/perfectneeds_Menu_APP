@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/list_item_background"
-    tools:context="com.example.mohammed.Menu_App.MakiActivity">
+    tools:context="com.example.mohammed.Menu_App.MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <!-- Logo imageview -->
+        <!-- Numbers category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -20,72 +20,72 @@
                 android:id="@+id/logo"
                 style="@style/CategoryStyle_logo"
                 android:background="?android:attr/selectableItemBackground"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo"
+                android:contentDescription="@string/content_description_log"/>
         </FrameLayout>
 
-        <!-- ura maki sub_category -->
+
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/list_item_height"
             android:background="@color/category_soup">
 
             <TextView
-                android:id="@+id/ura_maki"
-                style="@style/Sub_CategoryStyle"
+                android:id="@+id/soup"
+                style="@style/CategoryStyle_arabic"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@string/sub_category_ura_maki" />
+                android:text="@string/category_soup_arabic" />
         </FrameLayout>
 
-        <!-- crispy ura maki sub_category -->
+        <!-- Family category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/category_tempura">
 
             <TextView
-                android:id="@+id/crispy_ura_maki"
-                style="@style/Sub_CategoryStyle"
+                android:id="@+id/tampura"
+                style="@style/CategoryStyle_arabic"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@string/sub_category_crispy_ura_maki" />
+                android:text="@string/category_tampura_arabic" />
         </FrameLayout>
 
-        <!-- ura maki special sub_category -->
+        <!-- Colors category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/category_donburi">
 
             <TextView
-                android:id="@+id/special_maki"
-                style="@style/Sub_CategoryStyle"
+                android:id="@+id/donburi"
+                style="@style/CategoryStyle_arabic"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@string/sub_category_special_maki" />
+                android:text="@string/category_donburi_arabic" />
         </FrameLayout>
 
-        <!-- gunkan maki sub_category -->
+        <!-- Phrases category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/category_appetizers">
 
             <TextView
-                android:id="@+id/gunkan_maki"
-                style="@style/Sub_CategoryStyle"
+                android:id="@+id/appetizers"
+                style="@style/CategoryStyle_arabic"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@string/sub_category_gunkan_maki" />
+                android:text="@string/category_appetizers_arabic" />
         </FrameLayout>
 
-        <!-- hoso maki sub_category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/category_maki">
 
             <TextView
-                android:id="@+id/hoso_maki"
-                style="@style/Sub_CategoryStyle"
+                android:id="@+id/maki"
+                style="@style/CategoryStyle_arabic"
                 android:background="?android:attr/selectableItemBackground"
-                android:text="@string/sub_category_hoso_maki" />
+                android:text="@string/category_maki_arabic" />
         </FrameLayout>
 
     </LinearLayout>

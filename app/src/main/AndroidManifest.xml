@@ -11,6 +11,16 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MakiActivity"
+            android:label="@string/category_maki"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MakiSubActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".StartActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,11 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MakiAvtivity"
-            android:label="@string/category_maki"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".MakiSubActivity"></activity>
+        <activity android:name=".MainActivity_Arabic" android:screenOrientation="landscape"/>
+        <activity android:name=".MakiActivity_Arabic" android:screenOrientation="landscape" />
+        <activity android:name=".MakiSubActivity_Arabic" android:screenOrientation="landscape"/>
+
     </application>
 
 </manifest>

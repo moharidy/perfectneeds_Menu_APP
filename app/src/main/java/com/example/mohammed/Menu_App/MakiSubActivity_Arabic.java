@@ -2,19 +2,17 @@ package com.example.mohammed.Menu_App;
 
 import android.content.Context;
 import android.media.AudioManager;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MakiSubActivity extends AppCompatActivity {
+public class MakiSubActivity_Arabic extends AppCompatActivity {
 
     GridView gridView;
     MediaPlayer mMediaPlayer;
@@ -48,15 +46,15 @@ public class MakiSubActivity extends AppCompatActivity {
         myAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
         final ArrayList<Menu_Item> menuItems  = new ArrayList<Menu_Item>();
-        menuItems.add( new Menu_Item("Ura Maki","Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura maki special","Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
-        menuItems.add( new Menu_Item("Ura Grilled Salmon   30.00", "Grilled Salmon, Cucomber, topped with Seaseme Seeds & Tiryaki",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("اورا ماكي","أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي ",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("اورا ماكي ممتاز","Ura Grilled Salmon   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
+        menuItems.add( new Menu_Item("أورا سمك السلمون المشوي   30.00", "سلمون مشوي ، خيار ، مغطاة بسمسم وبذور ترياكي",R.drawable.ura_grilled_salmon,R.raw.ura_grilled_salmon) );
 
         MenuItemAdapter adapter = new MenuItemAdapter (this,menuItems ,R.color.category_maki);
         gridView =  findViewById(R.id.list);
@@ -66,16 +64,13 @@ public class MakiSubActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Menu_Item menuItem = menuItems.get(position);
-
-                ImageView imageview = findViewById(R.id.image_view);
-                imageview.();
                 releaseMediaPlayer();
                 int result = myAudioManager.requestAudioFocus( mOnAudioFocusChangeListener  ,
                         AudioManager.STREAM_MUSIC,
                         AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
                 if ( result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED){
 
-                    mMediaPlayer = MediaPlayer.create(MakiSubActivity.this,menuItem.getmAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(MakiSubActivity_Arabic.this,menuItem.getmAudioResourceId());
                     mMediaPlayer.start();
                     mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override

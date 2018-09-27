@@ -8,14 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="CategoryStyle">
+    <item name="android:layout_width">200dp</item>
+    <item name="android:layout_height">@dimen/list_item_height</item>
+    <item name="android:gravity">top</item>
+    <item name="android:paddingLeft">15dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="CategoryStyle_arabic">
         <item name="android:layout_width">200dp</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
-        <item name="android:gravity">top</item>
+        <item name="android:gravity">end</item>
         <item name="android:paddingLeft">15dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+
+
+
     <style name="Sub_CategoryStyle">
     <item name="android:layout_width">200dp</item>
     <item name="android:layout_height">@dimen/list_item_height</item>
@@ -25,6 +37,16 @@
     <item name="android:textStyle">bold</item>
     <item name="android:textAppearance">?android:textAppearanceMedium</item>
 </style>
+
+    <style name="Sub_CategoryStyle_arabic">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
 
     <style name="CategoryStyle_logo">
         <item name="android:layout_width">100dp</item>

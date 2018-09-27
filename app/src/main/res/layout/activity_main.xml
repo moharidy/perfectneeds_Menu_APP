@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <!-- Numbers category -->
+        <!-- Logo imageview -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -23,7 +33,7 @@
                 android:src="@drawable/logo" />
         </FrameLayout>
 
-
+        <!-- Soup category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/list_item_height"
@@ -36,7 +46,7 @@
                 android:text="@string/category_soup" />
         </FrameLayout>
 
-        <!-- Family category -->
+        <!-- Tempura category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,7 +59,7 @@
                 android:text="@string/category_tampura" />
         </FrameLayout>
 
-        <!-- Colors category -->
+        <!-- Donburi category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +72,7 @@
                 android:text="@string/category_donburi" />
         </FrameLayout>
 
-        <!-- Phrases category -->
+        <!-- Appetizers category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,7 +84,7 @@
                 android:background="?android:attr/selectableItemBackground"
                 android:text="@string/category_appetizers" />
         </FrameLayout>
-
+        <!-- Maki category -->
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,6 +96,54 @@
                 android:background="?android:attr/selectableItemBackground"
                 android:text="@string/category_maki" />
         </FrameLayout>
+        <!-- Bento boxes category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_maki">
+
+            <TextView
+
+                style="@style/CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Bento boxes" />
+        </FrameLayout>
+        <!-- Sharing boats category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_maki">
+
+            <TextView
+
+                style="@style/CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Sharing boats" />
+        </FrameLayout>
+        <!-- Noodels category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_maki">
+
+            <TextView
+
+                style="@style/CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Noodels" />
+        </FrameLayout>
+        <!-- Teiyaki skewers category -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/category_maki">
+
+            <TextView
+
+                style="@style/CategoryStyle"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Teriyaki skewers" />
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -96,3 +154,4 @@
         android:scaleType="fitXY" />
 
 </LinearLayout>
+</ScrollView>
